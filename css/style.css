@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+box-sizing: border-box;
+margin: 0%;
+padding: 0%;
+font-family: 'Poppins', sans-serif;
+font-weight: bold;
+}
+body{
+    line-height: 1.6;
+}
+
+.navbar{
+  background-color: transparent !important;
+  border-bottom: 1px solid rgb(209, 208, 208);
+  padding: .9rem 0;
+}
+.navbar-brand{
+  color: #cf4302 !important;
+  font-size: 2.5rem;
+}
+.navbar-nav{
+  margin: 0 1.8rem;
+}
+.navbar-nav .nav-link{
+  margin: 0 1rem;
+  color: rgb(95, 94, 94);
+}
+.navbar-nav .nav-link i,#homeDown i{
+    color: #cf4302;
+}
+.navbar-nav .nav-link:hover{
+  color: rgb(12, 12, 12);
+}
+
+
+
+
+#homeImage{
+    background: url(../img/home1.png) no-repeat center/cover;
+    color: aliceblue;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    padding: 0px 0px;
+    /* background-size:contain; */
+  }
+ 
+#homeImage  .homeContent{
+ position: absolute;
+ top: 30%; 
+ left: 10%;
+}
+  
+#homeImage .homeContent h2{
+    color: rgb(27, 27, 27);
+    font-size: 2.5rem;
+    font-weight: bold;
+}  
+.dropdown-toggle {
+  background: white;
+  color: #cf4302;
+}
+
+#homeDown{
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  letter-spacing: 2px;
+}
+#homeDown h4{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+#homeDown p{
+  font-size: .9rem;
+}
+
+
+/* 2-Office  */
+#officeImage{
+  background: url(../img/austin-distel-rxpThOwuVgE-unsplash.jpg) no-repeat center/cover;
+    color: rgb(29, 30, 31);
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin: 2rem 0;
+}
+#officeImageDown{
+  background: url(../img/office_key_down.png) no-repeat center/cover;
+    color: rgb(29, 30, 31);
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin: 6rem 0;
+}
+ small{
+  color: #cf4302; 
+  font-weight: bold;
+}
+#officeImageDown h3{
+  font-size: 2.7rem;
+  font-weight: bolder;
+}
+.bt0{
+  background-color: #CF7202; 
+  color: rgb(243, 226, 211);
+  border-radius: 15;
+  font-weight: bold;
+  padding: 1rem 1.7rem;
+}
+
+/* 3-Carousel Section */
+#carouselSection{
+  margin-top: 5rem;
+}
+#carouselSection h2{
+  color: rgb(27, 27, 27);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#carouselDown{
+  background: url(../img/carousel-down1.png) no-repeat center/cover;
+  color: rgb(29, 30, 31);
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+  padding-left: 0%;
+  padding-right: 0%;
+  /* background-attachment: fixed; */
+  background-size:contain;
+}
+
+#carouselDown .cd{
+  color: aliceblue;
+  position: absolute;
+  top:35%;
+  left:8%;
+  letter-spacing: 2px;
+}
+#carouselDown .cd .btn{
+  background-color: aliceblue;
+  
+}
+
+/* 4-Footer */
+
+#footerImage{
+  background: url(../img/harika-g-AjRA93pwgZs-unsplash.jpg) no-repeat center/cover;
+    color: whitesmoke;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-top: 4rem;
+}
+
+#footerImage{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#footerImage h3{
+  font-size: 2.7rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+#footerImage p{
+  letter-spacing: 2px;
+}
+
+.bt {
+  background-color: #CF7202; 
+  color: rgb(243, 226, 211);
+  border-radius: 21;
+}
+.bt:hover{
+  color: #df4823;
+  background-color: rgb(243, 226, 211);
+}
+
+@media screen and (max-width:995px){
+  #carouselDown .cd{
+    top:40%;
+    left:8%;
+  }
+  #carouselDown .cd p{
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px){
+  #footerImage h3,#officeImageDown h3{
+    font-size: 2rem;
+  }
+  #footerImage p{
+    display: none;
+  }
+  #officeImageDown p{
+    font-size: .7rem;
+  }
+  .navbar{
+    border-bottom: none;
+  }
+  #homeImage  .homeContent{
+    top: 50%; 
+    left: 15%;
+   }
+  #homeImage .homeContent h2{
+    font-size: 1.5rem;
+}
+#carouselSection h2{
+  font-size: 1.5rem;
+}
+#carouselDown .cd{
+  top:45%;
+  left:8%;
+}
+#carouselDown .cd h2{
+  display: none;
+}
+
+}
+@media screen and (max-width:436px){
+  #footerImage h3{
+    display: none;
+  }
+  .bt {
+    display: none;
+  }
+  #officeImageDown{
+    margin: 2rem 0;
+  }
+  #officeImageDown small{
+    font-size: 50%;
+    font-weight: bold;
+  }
+  #officeImageDown h3{
+    font-size: 1.5rem;
+  }
+  #officeImageDown p{
+    display: none;
+  }
+  #homeImage .homeContent h2{
+    font-size: 1rem;
+}
+  .bt0{
+    padding: .5rem .6rem;
+  }
+  #carouselDown .cd small{
+    display: none;
+  }
+  #smallScreenNone{
+    display: none;
+  }
+}
+
+.foot{
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+.foot ul {
+  list-style: none;
+}
+.foot ul li{
+  margin: 15px 0;
+  font-size: 0.94rem;
+  letter-spacing: 1px;
+}
+.foot ul li:first-child{
+  padding: 9px 0;
+}
+.foot ul li:first-child::before{
+  position: absolute;
+  content: "";
+  top: 23%;
+  left: 14px;
+  width: 33%;
+  height: 3px;
+  background-color: rgb(221, 70, 11);
+}
+.foot ul li a{
+  color: rgb(37, 35, 35);
+}
+
+.social a{
+  color: rgb(43, 41, 41);
+}
